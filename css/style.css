@@ -10,9 +10,26 @@ body {
     font-size: 13px;
 }
 
+.clearfix {
+    content: '';
+    display: table;
+    clear: both;
+}
+
 .container_60 {
     width: 60%;
     margin: 0 auto;
+}
+.container_80 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.white {
+    color: white;
+}
+.darkblue {
+    color: #21333e;
 }
 
 .horizondal_list {
@@ -42,6 +59,35 @@ body {
 .span_green {
     color: #038384;
     font-weight: 500;
+}
+.span_highlighter {
+    background-color: #03838438;
+    padding: 5px 10px;
+}
+
+p {
+    line-height: 20px;
+}
+
+h2 {
+    font-size: 3em;
+}
+h3 {
+    font-size: 1.6em;
+}
+
+.container_block {
+    display: flex;
+    justify-content: space-between;
+}
+.block {
+    width: calc(100% / 3);
+    background-color: #19191f;
+    border-radius: 10px;
+    padding: 30px;
+}
+.block_center {
+    margin: 0 20px;
 }
 /* INIZIO HEADER */
 
@@ -124,7 +170,6 @@ nav .horizondal_list li a {
 
 .text_jumbo p {
     color: #bcbdbd;
-    line-height: 20px;
     margin: 10px 0 30px 0;
 }
 
@@ -132,3 +177,189 @@ nav .horizondal_list li a {
     margin-right: 10px;
 }
 /* FINE JUMBOTRON */
+
+/* FINE HEADER */
+
+/* INIZIO MAIN */
+
+/* INIZIO WHO WE ARE */
+.information {
+    padding: 80px 0 120px 0;
+}
+
+/* INFO TRANSPORT */
+.transport {
+    float: left;
+    width: 60%;
+}
+
+.transport h2 {
+    margin-top: 20px;
+}
+
+.transport p {
+    margin: 20px 0;
+    color: #69696d;
+}
+.transport .exalt {
+    padding: 10px;
+    border-left: 5px solid #03838438;
+}
+
+.transport ul {
+    margin-left: 15px;
+    color: #69696d;
+}
+
+/* AUTO AND CERTIFICATION */
+.auto_certification {
+    float: right;
+    width: 35%;
+}
+
+.vehicle {
+    list-style: none;
+    margin: 20px 0 40px 0;
+}
+.vehicle li {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    width: 70%;
+    border-bottom: 1px solid black;
+}
+.vehicle li img {
+    width: 80px;
+    background-color: #03838438;
+    padding: 5px;
+    vertical-align: middle;
+}
+.vehicle li div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.certification {
+    width: 100px;
+    margin-top: 20px;
+}
+/* FINE WHO WE ARE */
+
+/* INIZIO SERVICES */
+.services {
+    padding: 80px 0 120px 0;
+    width: 100%;
+    background-color: #121117;
+}
+
+.services p {
+    color: #bcbdbd;
+}
+
+.services .container_60 > h2 {
+    margin: 20px 0;
+}
+
+.services .container_60 > p {
+    display: inline-block;
+    width: 65%;
+}
+
+.services .container_60 > .btn {
+    float: right;
+}
+
+.services .container_block {
+    margin-top: 40px;
+}
+.services .block {
+    position: relative;
+}
+.circle_i {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #03838438;
+    text-align: center;
+}
+.circle_i i {
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    color: #038384;
+}
+
+.fa-arrow-right {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: #16928e;
+    font-size: 18px;
+}
+
+.services .container_block h3 {
+    margin: 15px 0;
+}
+/* FINE SERVICES */
+
+/* INIZIO PROCEDURE */
+.procedure {
+    position: relative;
+    width: 100%;
+    background-color: #eef4ed;
+    padding: 80px 0 120px 0;
+}
+
+.procedure p {
+    color: #738085;
+}
+
+.procedure .container_80 {
+    text-align: center;
+}
+
+.procedure .container_80 h2 {
+    margin: 20px 0;
+}
+.procedure .container_80 > p {
+    display: inline-block;
+    width: 50%;
+}
+
+.container_sequence {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.sequence {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% / 5 - 56px);
+}
+
+.circle_seq {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background-color: #c1dfe1;
+    border-radius: 50%;
+}
+.num_seq {
+    line-height: 30px;
+}
+
+.sequence h3 {
+    margin: 20px 0;
+}
+
+.line {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    border-bottom: 4px solid #cce3de;
+    left: 0;
+    top: 284px;
+}

@@ -89,6 +89,13 @@ h3 {
 .block_center {
     margin: 0 20px;
 }
+
+.circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
 /* INIZIO HEADER */
 
 /* INFO */
@@ -340,12 +347,8 @@ nav .horizondal_list li a {
     width: calc(100% / 5 - 56px);
 }
 
-.circle_seq {
-    width: 30px;
-    height: 30px;
-    text-align: center;
+.sequence .circle {
     background-color: #c1dfe1;
-    border-radius: 50%;
 }
 .num_seq {
     line-height: 30px;
@@ -363,3 +366,150 @@ nav .horizondal_list li a {
     left: 0;
     top: 284px;
 }
+
+/* FINE PROCEDURE */
+
+/* INIZIO NUMBERS */
+.numbers {
+    width: 100%;
+    padding: 100px 0;
+    background-image: url(../img/bg-10.jpg);
+    background-size: 100%;
+    background-position: 50% 60%;
+}
+.numbers .container_60 {
+    text-align: center;
+}
+
+.numbers h2 {
+    margin: 20px 0 60px 0;
+}
+
+.container_data {
+    display: flex;
+    justify-content: space-between;
+}
+
+.data span {
+    font-size: 25px;
+    color: #52bbbb;
+    font-weight: 900;
+}
+/* FINE NUMBERS */
+
+/* INIZIO FEEDBACK */
+.feedback {
+    width: 100%;
+    padding: 80px 0;
+    background-color: #121117;
+}
+.feedback .container_60 {
+    text-align: center;
+}
+
+.feedback p {
+    color: #bcbdbd;
+}
+
+.feedback h2 {
+    margin: 20px 0;
+}
+
+.feedback .container_block {
+    margin-top: 40px;
+}
+
+.feedback .block {
+    position: relative;
+    text-align: left;
+}
+
+.feedback .block img {
+    width: 100px;
+}
+
+.feedback .block .comment {
+    margin: 15px 0 5px 0;
+}
+
+.feedback .fa-quote-right {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    font-size: 20px;
+    color: #47474c;
+}
+/* FINE FEEDBACK */
+
+/* INIZIO CONTACT US */
+/* SEND MESSAGE */
+.contact_us {
+    padding: 80px 0 100px 0;
+}
+
+.contact_us p {
+    color: #69696d;
+}
+.send_message {
+    float: left;
+    width: 60%;
+}
+
+.send_message h2 {
+    margin: 20px 0;
+}
+
+.send_message form {
+    margin-top: 40px;
+}
+
+.send_message input {
+    width: calc(100% / 2 - 15px);
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: #ececec;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 5px;
+}
+
+.send_message textarea {
+    background-color: #ececec;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* CONTACT */
+.contact {
+    float: right;
+    width: 35%;
+}
+
+.contact p {
+    margin: 20px 0;
+}
+
+.list_methods_contact {
+    list-style: none;
+}
+
+.list_methods_contact li {
+    color: #058283;
+    margin-bottom: 20px;
+}
+
+.list_methods_contact .circle {
+    background-color: #daeced;
+    display: inline-block;
+}
+.list_methods_contact .circle i {
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.list_methods_contact .btn {
+    color: #058283;
+}
+

@@ -464,7 +464,7 @@ nav .horizondal_list li a {
 }
 
 .send_message input {
-    width: calc(100% / 2 - 15px);
+    width: calc(100% / 2 - 7px);
     height: 30px;
     margin-bottom: 10px;
     background-color: #ececec;
@@ -475,6 +475,8 @@ nav .horizondal_list li a {
 }
 
 .send_message textarea {
+    max-width: 99%;
+    width: 99%;
     background-color: #ececec;
     border: 0;
     border-radius: 5px;
@@ -495,21 +497,83 @@ nav .horizondal_list li a {
     list-style: none;
 }
 
-.list_methods_contact li {
+.contact .list_methods_contact li {
     color: #058283;
     margin-bottom: 20px;
 }
 
-.list_methods_contact .circle {
+.contact .list_methods_contact .circle {
     background-color: #daeced;
     display: inline-block;
 }
-.list_methods_contact .circle i {
+.contact .list_methods_contact .circle i {
     font-size: 15px;
     line-height: 30px;
 }
 
-.list_methods_contact .btn {
+.contact .list_methods_contact .btn {
     color: #058283;
 }
+/* FINE CONTACT US */
+
+/* FINE MAIN */
+
+/* INIZIO FOOTER */
+/* FOOT TOP */
+.foot_top {
+    width: 100%;
+    background-color: #111117;
+    padding: 80px 0 120px 0;
+}
+
+.foot_contact p {
+    color: #bcbdbd;
+    margin: 20px 0;
+}
+
+.foot_contact {
+    width: calc(100% / 4);
+    margin-right: 20px;
+}
+
+.foot_top ul {
+    list-style: none;
+}
+
+.foot_top ul li {
+    color: #bcbdbd;
+    margin-bottom: 10px;
+}
+
+.foot_top ul li i {
+    margin-right: 5px;
+
+}
+
+.foot_contact ul {
+    margin: 20px 0;
+}
+
+.foot_top .block h3 {
+    margin-bottom: 20px;
+}
+
+/* FOOT BUTTOM */
+.foot_bottom {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #0d0d11;
+}
+.foot_bottom p {
+    color: #c0c3d0;
+}
+
+.foot_bottom .text_left {
+    float: left;
+}
+
+.foot_bottom .text_right {
+    float: right;
+}
+
 

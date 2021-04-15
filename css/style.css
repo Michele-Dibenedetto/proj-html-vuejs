@@ -37,6 +37,7 @@ body {
 }
 .horizondal_list li {
     display: inline-block;
+    margin: 0 10px;
 }
 .horizondal_list li a {
     text-decoration: none;
@@ -71,6 +72,7 @@ p {
 
 h2 {
     font-size: 3em;
+    margin: 20px 0;
 }
 h3 {
     font-size: 1.6em;
@@ -116,10 +118,6 @@ h3 {
     color: #bcbdbd;
 }
 
-.head_contact li {
-    margin: 0 10px;
-}
-
 /*INIZIO JUMBOTRON */
 #jumbotron {
     position: relative;
@@ -155,13 +153,18 @@ h3 {
     width: 110px;
 }
 
-nav .horizondal_list li {
-    margin: 0 10px;
-    color: #bcbdbd;
+#jumbotron .horizondal_list {
+    display: inline-block;
+}
+
+#jumbotron nav .horizondal_list li a,
+#jumbotron nav i {
+    color: #d1d1d1;
     font-weight: 500;
 }
-nav .horizondal_list li a {
-    color: #d1d1d1;
+
+#jumbotron nav i {
+    margin: 0 10px;
 }
 
 /* TEXT JUMBOTRON */
@@ -200,10 +203,6 @@ nav .horizondal_list li a {
     width: 60%;
 }
 
-.transport h2 {
-    margin-top: 20px;
-}
-
 .transport p {
     margin: 20px 0;
     color: #69696d;
@@ -229,7 +228,7 @@ nav .horizondal_list li a {
     margin: 20px 0 40px 0;
 }
 .vehicle li {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     padding-bottom: 10px;
     width: 70%;
     border-bottom: 1px solid black;
@@ -262,10 +261,6 @@ nav .horizondal_list li a {
     color: #bcbdbd;
 }
 
-.services .container_60 > h2 {
-    margin: 20px 0;
-}
-
 .services .container_60 > p {
     display: inline-block;
     width: 65%;
@@ -281,16 +276,13 @@ nav .horizondal_list li a {
 .services .block {
     position: relative;
 }
-.circle_i {
+.services .circle {
     width: 40px;
     height: 40px;
-    border-radius: 50%;
     background-color: #03838438;
-    text-align: center;
 }
-.circle_i i {
+.services .circle i {
     font-size: 20px;
-    text-align: center;
     line-height: 40px;
     color: #038384;
 }
@@ -324,9 +316,6 @@ nav .horizondal_list li a {
     text-align: center;
 }
 
-.procedure .container_80 h2 {
-    margin: 20px 0;
-}
 .procedure .container_80 > p {
     display: inline-block;
     width: 50%;
@@ -381,11 +370,8 @@ nav .horizondal_list li a {
     text-align: center;
 }
 
-.numbers h2 {
-    margin: 20px 0 60px 0;
-}
-
 .container_data {
+    margin-top: 60px;
     display: flex;
     justify-content: space-between;
 }
@@ -409,10 +395,6 @@ nav .horizondal_list li a {
 
 .feedback p {
     color: #bcbdbd;
-}
-
-.feedback h2 {
-    margin: 20px 0;
 }
 
 .feedback .container_block {
@@ -453,10 +435,6 @@ nav .horizondal_list li a {
 .send_message {
     float: left;
     width: 60%;
-}
-
-.send_message h2 {
-    margin: 20px 0;
 }
 
 .send_message form {
@@ -552,6 +530,10 @@ nav .horizondal_list li a {
 
 .foot_contact ul {
     margin: 20px 0;
+}
+
+.foot_top .block {
+    margin-right: 20px
 }
 
 .foot_top .block h3 {

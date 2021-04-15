@@ -20,13 +20,13 @@
 
                     <div class="time">
                         <i class="fas fa-clock"></i>
-                        <span>Open hours: Mon - Sat - 9:00 - 18:00</span>
+                        <span>Open hours: {{openHours}}</span>
                     </div>
 
                     <div class="head_contact">
                         <ul class="horizondal_list">
-                            <li><a href="#"><i class="fas fa-phone"></i> +1 (305) 1234-5678</a></li>
-                            <li><a href="#"><i class="fas fa-envelope"></i> hello@example.com</a></li>
+                            <li><a href="#"><i class="fas fa-phone"></i> {{phone}}</a></li>
+                            <li><a href="#"><i class="fas fa-envelope"></i> {{email}}</a></li>
                             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                             <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
@@ -42,17 +42,16 @@
                 <div class="container_60">
                     <!-- NAV JUMBOTRON -->
                     <nav>
-                        <img class="logo" src="img\logo.svg" alt="logo">
+                        <img class="logo" :src="logo" alt="logo">
 
-                        <ul class="horizondal_list">
-                            <li><a href="#">HOME</a></li>
-                            <li><a href="#">ABOUT</a></li>
-                            <li><a href="#">SERVICES</a></li>
-                            <li><a href="#">PROCESS</a></li>
-                            <li><a href="#">TESTIMONIALS</a></li>
-                            <li><i class="far fa-user"></i></li>
-                            <li><button class="btn btn_full">GET IN TOUCH</button></li>
-                        </ul>
+                        <div>
+                            <ul class="horizondal_list">
+                                <li v-for="element in navHeader"><a href="#">{{element.link}}</a></li>
+                            </ul>
+                            <i class="far fa-user"></i>
+                            <button class="btn btn_full">GET IN TOUCH</button>
+                        </div>
+                        
                     </nav>
                     
                     <!-- TEXT JUMBOTRON -->
@@ -134,21 +133,21 @@
 
                     <div class="container_block">
                         <div class="block">
-                            <div class="circle_i"><i class="fas fa-truck-loading"></i></div>
+                            <div class="circle"><i class="fas fa-truck-loading"></i></div>
                             <i class="fas fa-arrow-right"></i>
                             <h3 class="white">Technology</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda commodi magni odio.</p>
                         </div>
 
                         <div class="block block_center">
-                            <div class="circle_i"><i class="fas fa-temperature-low"></i></div>
+                            <div class="circle"><i class="fas fa-temperature-low"></i></div>
                             <i class="fas fa-arrow-right"></i>
                             <h3 class="white">Reefer cargo</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda commodi magni odio.</p>
                         </div>
 
                         <div class="block">
-                            <div class="circle_i"><i class="fas fa-boxes"></i></div>
+                            <div class="circle"><i class="fas fa-boxes"></i></div>
                             <i class="fas fa-arrow-right"></i>
                             <h3 class="white">Dry cargo</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda commodi magni odio.</p>
@@ -320,16 +319,16 @@
                 <div class="container_60">
                     <div class="container_block">
                         <div class="foot_contact">
-                            <img class="logo" src="img\logo.svg" alt="logo">
+                            <img class="logo" :src="logo" alt="logo">
                             <p>A functional HTML Template for Corporate & Business.</p>
                             <ul>
                                 <li>
                                     <i class="fas fa-phone"></i>
-                                     +1 (305) 1234-5678
+                                     {{phone}}
                                 </li>
                                 <li>
                                     <i class="fas fa-envelope"></i>
-                                    hello@example.com
+                                    {{email}}
                                 </li>
                                 <li>
                                     <i class="fas fa-map-marker-alt"></i>
@@ -339,39 +338,10 @@
                             <button class="btn btn_empty">GET IN TOUCH</button>
                         </div>
 
-                        <div class="block">
-                            <h3 class="white">About</h3>
+                        <div v-for="element in navFooter" class="block">
+                            <h3 class="white">{{element.title}}</h3>
                             <ul>
-                                <li><i class="fas fa-chevron-right"></i> The Company</li>
-                                <li><i class="fas fa-chevron-right"></i> Istitutionla</li>
-                                <li><i class="fas fa-chevron-right"></i> Social & Events</li>
-                                <li><i class="fas fa-chevron-right"></i> Innovation</li>
-                                <li><i class="fas fa-chevron-right"></i> Environment</li>
-                                <li><i class="fas fa-chevron-right"></i> Tecnhology</li>
-                            </ul>
-                        </div>
-
-                        <div class="block block_center">
-                            <h3 class="white">Transport</h3>
-                            <ul>
-                                <li><i class="fas fa-chevron-right"></i> Industrialized</li>
-                                <li><i class="fas fa-chevron-right"></i> Chemicals</li>
-                                <li><i class="fas fa-chevron-right"></i> Packaged liquids</li>
-                                <li><i class="fas fa-chevron-right"></i> Construction</li>
-                                <li><i class="fas fa-chevron-right"></i> Laminated wood</li>
-                                <li><i class="fas fa-chevron-right"></i> And others</li>
-                            </ul>
-                        </div>
-
-                        <div class="block">
-                            <h3 class="white">Support</h3>
-                            <ul>
-                                <li><i class="fas fa-chevron-right"></i> Responsibility</li>
-                                <li><i class="fas fa-chevron-right"></i> Terms of use</li>
-                                <li><i class="fas fa-chevron-right"></i> About cookies</li>
-                                <li><i class="fas fa-chevron-right"></i> Privacy Policy</li>
-                                <li><i class="fas fa-chevron-right"></i> Accessibility</li>
-                                <li><i class="fas fa-chevron-right"></i> Information</li>
+                                <li v-for="item in element.list"><i class="fas fa-chevron-right"></i>{{item}}</li>
                             </ul>
                         </div>
 
